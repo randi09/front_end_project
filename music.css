@@ -5,13 +5,14 @@
 
 .root {
   display: flex;
+  flex-direction: column;
   position: relative;
   height: 100%;
   width: 100%;
   justify-content: center;
   align-items: center;
   background: rgb(63, 94, 251);
-  background-image: url(./image/microphone.jpeg);
+  /* background-image: url(./image/music.jpeg); */
   background: rgb(4, 13, 57);
   background: linear-gradient(
     100deg,
@@ -49,4 +50,21 @@
 }
 h3 {
   color: cornsilk;
+}
+
+.albumtext {
+  display: flex;
+  flex-wrap: wrap;
+  color: blanchedalmond;
+}
+
+img {
+  display: flex;
+  margin: 15px;
+  padding: 15px;
+  justify-content: center;
+}
+
+li {
+  color: antiquewhite;
 }

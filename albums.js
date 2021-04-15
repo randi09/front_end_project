@@ -3,7 +3,6 @@ const getalbum = async (album) => {
     `http://ws.audioscrobbler.com/2.0/?method=album.search&album=${album}&api_key=90a50789c73087ffcd11cb040d793b8e&format=json`
   );
   const convertedJson = await getTopAlbums.json();
-  console.log(convertedJson);
   const albums = convertedJson.results.albummatches.album;
   for (let a of albums) {
     console.log(a);
@@ -16,7 +15,6 @@ const getalbum = async (album) => {
     ullist.append(list);
     list.append(a.name);
   }
-  const albumtext = document.querySelector(".albumtext");
 };
 
 const button = document.querySelector("#albumsbutton");

@@ -3,10 +3,8 @@ const getbio = async (artist) => {
     `http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artist}&api_key=90a50789c73087ffcd11cb040d793b8e&format=json`
   );
   const convertedJson = await metadatabio.json();
-  console.log(convertedJson);
   const bio = convertedJson.artist.bio.content;
   const images = convertedJson.artist.image[2];
-  console.log(bio);
   const biotext = document.querySelector(".biotext");
   biotext.innerHTML = bio;
 };
