@@ -9,10 +9,6 @@ const getbio = async (artist) => {
   console.log(bio);
   const biotext = document.querySelector(".biotext");
   biotext.innerHTML = bio;
-  //   const image = document.createElement("img");
-  //   image.src = a.image[2]["#text"];
-  //   albumtext.append(ullist, image);
-  // };
 };
 
 const button = document.querySelector("#homebutton");
