@@ -5,7 +5,6 @@ const getalbum = async (album) => {
   const convertedJson = await getTopAlbums.json();
   const albums = convertedJson.results.albummatches.album;
   for (let a of albums) {
-    console.log(a);
     const albumtext = document.querySelector(".albumtext");
     const ullist = document.createElement("ul");
     const list = document.createElement("li");
