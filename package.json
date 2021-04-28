@@ -1,0 +1,29 @@
+{
+  "name": "photo-sharing-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "albums.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randi09/front_end_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/randi09/front_end_project/issues"
+  },
+  "homepage": "https://github.com/randi09/front_end_project#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.6.0",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "sequelize-cli": "^6.2.0"
+  }
+}
